@@ -18,3 +18,8 @@ function fetchUserDetails(username: string): User {
     }
     return user
 }
+
+let value:any = 1
+// value.toLowerCase() // This will cause a TypeScript error because `value` is a number, not a string.
+value = "Hello"
+value.toLowerCase() // This is fine because we've changed `value` to a string.
