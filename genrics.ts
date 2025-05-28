@@ -3,7 +3,7 @@ const favoriteThings = ["Pizza", "Ice Cream", "Chocolate", "Movies", "Books"];
 
 const voters = [{name: "Alice", age: 30}, {name: "Bob", age: 25}, {name: "Charlie", age: 35}];
 
-function getLastItem<PlaceHolderType>(array: PlaceHolderType[]): PlaceHolderType{
+function getLastItem<PlaceHolderType>(array: PlaceHolderType[]): PlaceHolderType | undefined{
     return array[array.length - 1];
 }
 
