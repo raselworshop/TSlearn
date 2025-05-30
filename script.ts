@@ -79,8 +79,8 @@ function addToArray<Type>(array: Type[], item: Type): Type[]{
     return array;
 }
 
-addToArray(menu, { id: nextPizzaId++, name: "Chicken Becon rench", price: 10});
-addToArray(orderQueue, { id: nextOrderId++, pizza: menu[1], status: "ordered"})
+addToArray<Pizza>(menu, { id: nextPizzaId++, name: "Chicken Becon rench", price: 10});
+addToArray<Order>(orderQueue, { id: nextOrderId++, pizza: menu[1], status: "completed"})
 
 function completeOrder(orderId: number) : Order | undefined {
     const order = orderQueue.find(order => order.id === orderId)
